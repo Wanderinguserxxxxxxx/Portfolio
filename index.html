@@ -2,58 +2,120 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      background: green;
-      box-sizing: border-box;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: green;
+            box-sizing: border-box;
+        }
 
-    .navbar {
-      border: 2px solid green;
-      height: 60px;
-      display: flex;
-      background: #000;
-      justify-content: end;
-      align-items: center;
-      width: 100%;
-    }
+        .navbar {
+            border: 2px solid green;
+            height: 60px;
+            display: flex;
+            background: #000;
+            justify-content: end;
+            align-items: center;
+            width: 100%;
+            position: fixed;
+        }
 
-    .navbar-container {
-      display: flex;
-      list-style: none;
-      color: aqua;
-      border: 2px solid red;
-      margin: 0;      
-      padding: 0;    
-      gap: 20px;
-      font-size: larger;
-      font-weight: bolder ;      
-    }
+        .navbar-container {
+            display: flex;
+            list-style: none;
+            color: aqua;
+            border: 2px solid red;
+            margin: 0;
+            padding: 0;
+            gap: 20px;
+            font-size: larger;
+            font-weight: bolder;
+        }
 
-    .nav-items {
-      border: 2px solid rgb(218, 115, 20);
-    }
-  </style>
+        .nav-items {
+            border: 2px solid rgb(218, 115, 20);
+        }
+
+        main {
+            padding-top: 60px;
+        }
+        #Home{
+                    border: 2px solid firebrick;
+        height: 200px;
+        background: #08ce89;
+        }
+        #About {
+            border: 2px solid firebrick;
+            height: 200px;
+            background: #08ce89;
+        }
+
+        #Skills {
+            border: 2px solid firebrick;
+            height: 200px;
+            background: #08ce89;
+        }
+
+        #Projects {
+            border: 2px solid firebrick;
+            height: 200px;
+            background: #08ce89;
+        }
+
+        #Education {
+            border: 2px solid firebrick;
+            height: 200px;
+            background: #08ce89;
+        }
+
+        #Contact {
+            border: 2px solid firebrick;
+            height: 200px;
+            background: #08ce89;
+        }
+    </style>
 </head>
 
 <body>
-  <header>
-    <div class="navbar">
-      <ul class="navbar-container">
-        <li class="nav-items">Home</li>
-        <li class="nav-items">About</li>
-        <li class="nav-items">Skills</li>
-        <li class="nav-items">Projects</li>
-        <li class="nav-items">Education</li>
-        <li class="nav-items">Contact</li>
-      </ul>
-    </div>
-  </header>
+    <header>
+        <div class="navbar">
+            <ul class="navbar-container">
+                <li class="nav-items"><a href="#Home">Home</a></li>
+                <li class="nav-items"><a href="#About">About</a></li>
+                <li class="nav-items"><a href="#Skills">Skills</a></li>
+                <li class="nav-items"><a href="#Project">Projects</a></li>
+                <li class="nav-items"><a href="#Education">Education</a></li>
+                <li class="nav-items"><a href="#Contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <section id="Home">
+            <h1>Hi,I am Sahil Kumar</h1>
+        </section>
+        <section id="About">
+            <h2>About</h2>
+        </section>
+        <section id="Skills">
+            <h2>Skills</h2>
+        </section>
+        <section id="Projects">
+            <h2>Projects</h2>
+        </section>
+        <section id="Education">
+            <h2>Education</h2>
+        </section>
+        <section id="Contact">
+            <h2>Contact</h2>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
 </body>
 
 </html>
