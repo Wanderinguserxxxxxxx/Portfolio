@@ -2,32 +2,55 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <style>
-        body {
-            margin: 0px;
-            padding: 0px;
-            background: green;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: green;
+    }
 
-        .navbar {
-            border: 2px solid green;
-            height: 120px;
-            display: flex;
-            background: #000;
-        }
-    </style>
+    .navbar {
+      border: 2px solid green;
+      height: 120px;
+      display: flex;
+      background: #000;
+      justify-content: end;
+      align-items: center;
+      width: 100%;
+    }
+
+    .navbar-container {
+      display: flex;
+      list-style: none;
+      color: aqua;
+      border: 2px solid red;
+      margin: 0;      
+      padding: 0;    
+      gap: 20px;      
+    }
+
+    .nav-items {
+      border: 2px solid rgb(218, 115, 20);
+    }
+  </style>
 </head>
 
 <body>
-    <header>
-
-        <div class="navbar">
-            
-        </div>
-    </header>
+  <header>
+    <div class="navbar">
+      <ul class="navbar-container">
+        <li class="nav-items">Home</li>
+        <li class="nav-items">About</li>
+        <li class="nav-items">Skills</li>
+        <li class="nav-items">Projects</li>
+        <li class="nav-items">Education</li>
+        <li class="nav-items">Contact</li>
+      </ul>
+    </div>
+  </header>
 </body>
 
 </html>
