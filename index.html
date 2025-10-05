@@ -5,119 +5,101 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <style>
+    <Style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
         body {
-            margin: 0;
-            padding: 0;
-            background: green;
+            background-color: #234C6A;
+            color: beige;
+            font-family: Arial, Helvetica, sans-serif;
             box-sizing: border-box;
         }
 
-        .navbar {
-            border: 2px solid green;
-            height: 60px;
+        nav {
             display: flex;
-            background: #000;
-            justify-content: end;
+            justify-content: space-around;
             align-items: center;
-            width: 100%;
-            position: fixed;
+            height: 80px;
+            background-color: #1B3C53;
         }
 
-        .navbar-container {
+        nav ul {
             display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
             list-style: none;
-            color: aqua;
-            border: 2px solid red;
-            margin: 0;
-            padding: 0;
-            gap: 20px;
-            font-size: larger;
-            font-weight: bolder;
+            margin: 0px 20px;
+            /* padding: 10px; */
+            /* border: 2px solid red; */
         }
 
-        .nav-items {
-            border: 2px solid rgb(218, 115, 20);
+        .first-section {
+            display: flex;
+            justify-content: space-around;
+            margin: 70px 0px;
         }
 
-        main {
-            padding-top: 60px;
+        .first-section>div {
+            width: 35%;
         }
 
-        #Home {
-            border: 2px solid firebrick;
-            height: 200px;
-            background: #08ce89;
+        .left-section {
+            /* background-color: #456882; */
+            font-size: 2.0rem;
+            margin: 70px 0px;
         }
 
-        #About {
-            border: 2px solid firebrick;
-            height: 200px;
-            background: #08ce89;
+
+        .right-section img {
+            width: 500px;
+            /* margin: 50px 0px; */
         }
 
-        #Skills {
-            border: 2px solid firebrick;
-            height: 200px;
-            background: #08ce89;
+        .purple {
+            color: aquamarine;
         }
-
-        #Projects {
-            border: 2px solid firebrick;
-            height: 200px;
-            background: #08ce89;
-        }
-
-        #Education {
-            border: 2px solid firebrick;
-            height: 200px;
-            background: #08ce89;
-        }
-
-        #Contact {
-            border: 2px solid firebrick;
-            height: 200px;
-            background: #08ce89;
-        }
-    </style>
+    </Style>
 </head>
 
 <body>
     <header>
-        <div class="navbar">
-            <ul class="navbar-container">
-                <li class="nav-items"><a href="#Home">Home</a></li>
-                <li class="nav-items"><a href="#About">About</a></li>
-                <li class="nav-items"><a href="#Skills">Skills</a></li>
-                <li class="nav-items"><a href="#Project">Projects</a></li>
-                <li class="nav-items"><a href="#Education">Education</a></li>
-                <li class="nav-items"><a href="#Contact">Contact</a></li>
-            </ul>
-        </div>
+        <nav>
+            <div class="left">
+                <h2>MY PORTFOLIO</h2>
+            </div>
+            <div class="right">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Skills</li>
+                    <li>Projects</li>
+                    <li>Education</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+        </nav>
     </header>
     <main>
-        <section id="Home">
-            <h1>Hi,I am Sahil Kumar</h1>
-        </section>
-        <section id="About">
-            <h2>About</h2>
-        </section>
-        <section id="Skills">
-            <h2>Skills</h2>
-        </section>
-        <section id="Projects">
-            <h2>Projects</h2>
-        </section>
-        <section id="Education">
-            <h2>Education</h2>
-        </section>
-        <section id="Contact">
-            <h2>Contact</h2>
+        <section class="first-section">
+            <div class="left-section">
+                <div>
+                    Hi my name is <span class="purple">Sahil Kumar</span>
+                </div>
+                <div>
+                    I'm a passionate Computer Science student and developer who loves turning ideas into real-world
+                    applications using Java, Python, and modern web technologies.
+                </div>
+            </div>
+            <div class="right-section">
+                <img src="images/img1" alt="">
+            </div>
         </section>
     </main>
-    <footer>
-
-    </footer>
 </body>
 
 </html>
